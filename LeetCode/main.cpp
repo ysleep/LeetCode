@@ -21,6 +21,8 @@ int main(int argc, const char * argv[]) {
     TreeNode *t = solution.constructMaximumBinaryTree(a);
     
     cout<<t->val<<" "<<t->left->val<<" "<<t->right->val<<" "<<t->left->right->val;
+	int b;
+	cin>>b;
     
     return 0;
 }

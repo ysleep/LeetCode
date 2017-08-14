@@ -1,0 +1,10 @@
+# this ignore file is for visual studio 2012
+
+*.suo
+*.sdf
+*.sln
+*.vcxproj
+*.filters
+*.opensdf
+Debug/
+LeetCode/Debug/
