@@ -11,7 +11,16 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution;
-    cout<<solution.helloWorld();
+    vector<int> a;
+    a.push_back(3);
+    a.push_back(2);
+    a.push_back(1);
+    a.push_back(6);
+    a.push_back(0);
+    a.push_back(5);
+    TreeNode *t = solution.constructMaximumBinaryTree(a);
+    
+    cout<<t->val<<" "<<t->left->val<<" "<<t->right->val<<" "<<t->left->right->val;
     
     return 0;
 }
