@@ -18,8 +18,7 @@ Solution::Solution(int problemId){
 int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution(657);
-    string moves = "LL";
-    bool flag = solution.judgeCircle(moves);
+    int flag = solution.hammingDistance(0,7);
     cout<<flag<<endl;
 
     

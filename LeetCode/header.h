@@ -38,6 +38,9 @@ public:
     
     //657. Judge Route Circle
     bool judgeCircle(string moves);
+    
+    //461. Hamming Distance
+    int hammingDistance(int x, int y);
 
 private:
     int findMax(vector<int>& nums, int begin, int end);
