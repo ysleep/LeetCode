@@ -25,11 +25,13 @@ int main(int argc, const char * argv[]) {
     cout<<s1<<endl;
     cout<<ls1<<endl;
     
+
     string l2 = "www.baidu.com";
     string s2 = solution.encode(l2);
     string ls2 = solution.decode(s2);
     cout<<s2<<endl;
     cout<<ls2<<endl;
+
     
     return 0;
 }
