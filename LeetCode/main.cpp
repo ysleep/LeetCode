@@ -8,19 +8,28 @@
 
 #include "header.h"
 
+Solution::Solution(){}
+Solution::Solution(int problemId){
+    if(problemId==535){
+        srand( (unsigned)time(NULL) );
+    }
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
-    Solution solution;
-    vector<int> a;
-    a.push_back(3);
-    a.push_back(2);
-    a.push_back(1);
-    a.push_back(6);
-    a.push_back(0);
-    a.push_back(5);
-    TreeNode *t = solution.constructMaximumBinaryTree(a);
+    Solution solution(535);
     
-    cout<<t->val<<" "<<t->left->val<<" "<<t->right->val<<" "<<t->left->right->val;
+    string l1 = "www.baidu.com";
+    string s1 = solution.encode(l1);
+    string ls1 = solution.decode(s1);
+    cout<<s1<<endl;
+    cout<<ls1<<endl;
+    
+    string l2 = "www.baidu.com";
+    string s2 = solution.encode(l2);
+    string ls2 = solution.decode(s2);
+    cout<<s2<<endl;
+    cout<<ls2<<endl;
     
     return 0;
 }

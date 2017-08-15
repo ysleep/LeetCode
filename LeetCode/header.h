@@ -12,6 +12,7 @@
 #include <string.h>
 #include <iostream>
 #include <vector>
+#include <map>
 using namespace std;
 
 struct TreeNode {
@@ -24,13 +25,26 @@ struct TreeNode {
 class Solution{
 public:
     //struction test
+    Solution();
+    Solution(int problemId);
     string helloWorld();
     //654. Maximum Binary Tree
     TreeNode* constructMaximumBinaryTree(vector<int>& nums, int begin, int end);
     TreeNode* constructMaximumBinaryTree(vector<int>& nums);
+    
+    //535. Encode and Decode TinyURL
+    string encode(string longUrl);
+    string decode(string shortUrl);
 
 private:
     int findMax(vector<int>& nums, int begin, int end);
+    
+    //535. Encode and Decode TinyURL
+    string charDictStr = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    string tinyUrlPrefix = "http://tinyurl.com/";
+    map<string, string> tinyURLLong2ShortMap;
+    map<string, string> tinyURLShort2LongMap;
+    
 };
 
 
