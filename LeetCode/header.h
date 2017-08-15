@@ -35,6 +35,9 @@ public:
     //535. Encode and Decode TinyURL
     string encode(string longUrl);
     string decode(string shortUrl);
+    
+    //657. Judge Route Circle
+    bool judgeCircle(string moves);
 
 private:
     int findMax(vector<int>& nums, int begin, int end);

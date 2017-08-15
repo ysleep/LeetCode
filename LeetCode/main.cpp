@@ -17,20 +17,10 @@ Solution::Solution(int problemId){
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    Solution solution(535);
-    
-    string l1 = "www.baidu.com";
-    string s1 = solution.encode(l1);
-    string ls1 = solution.decode(s1);
-    cout<<s1<<endl;
-    cout<<ls1<<endl;
-    
-
-    string l2 = "www.baidu.com";
-    string s2 = solution.encode(l2);
-    string ls2 = solution.decode(s2);
-    cout<<s2<<endl;
-    cout<<ls2<<endl;
+    Solution solution(657);
+    string moves = "LL";
+    bool flag = solution.judgeCircle(moves);
+    cout<<flag<<endl;
 
     
     return 0;
