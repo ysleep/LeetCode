@@ -21,3 +21,12 @@ int Solution::findMax(vector<int>& nums, int begin, int end){
     }
     return maxNumIndex;
 }
+
+TreeNode* copyBinaryTree(TreeNode* t){
+    if(t==NULL)
+        return NULL;
+    TreeNode* root = new TreeNode(t->val);
+    root->left = copyBinaryTree(t->left);
+    root->right = copyBinaryTree(t->right);
+    return root;
+}

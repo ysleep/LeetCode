@@ -17,9 +17,24 @@ Solution::Solution(int problemId){
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    Solution solution(657);
-    int flag = solution.hammingDistance(0,7);
-    cout<<flag<<endl;
+    Solution solution(617);
+    //tree1
+    TreeNode* t1 = new TreeNode(1);
+    t1->left = new TreeNode(3);
+    t1->right = new  TreeNode(2);
+    t1->left->left = new TreeNode(5);
+    
+    //tree2
+    TreeNode* t2 = new TreeNode(2);
+    t2->left = new TreeNode(1);
+    t2->right = new  TreeNode(3);
+    t2->left->right = new TreeNode(4);
+    t2->right->right = new TreeNode(7);
+    
+    //merge
+    TreeNode* m = solution.mergeTrees(t1,t2);
+    //TreeNode* m = solution.copyBinaryTree(t1);
+    cout<<m->val<<" "<<m->left->val<<" "<<m->right->val<<" "<<m->left->left->val<<endl;
     
     return 0;
 }

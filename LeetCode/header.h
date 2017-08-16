@@ -41,9 +41,15 @@ public:
     
     //461. Hamming Distance
     int hammingDistance(int x, int y);
+    
+    //617. Merge Two Binary Trees
+    TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2);
+    
+
 
 private:
     int findMax(vector<int>& nums, int begin, int end);
+    TreeNode* copyBinaryTree(TreeNode* t);
     
     //535. Encode and Decode TinyURL
     string charDictStr = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
