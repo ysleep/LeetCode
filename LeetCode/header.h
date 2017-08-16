@@ -45,8 +45,9 @@ public:
     //617. Merge Two Binary Trees
     TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2);
     
-
-
+    //561. Array Partition I
+    int arrayPairSum(vector<int>& nums);
+    
 private:
     int findMax(vector<int>& nums, int begin, int end);
     TreeNode* copyBinaryTree(TreeNode* t);

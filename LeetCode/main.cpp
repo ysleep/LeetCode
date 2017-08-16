@@ -10,7 +10,7 @@
 
 Solution::Solution(){}
 Solution::Solution(int problemId){
-    if(problemId==535){
+    if(problemId==561){
         srand( (unsigned)time(NULL) );
     }
 }
@@ -18,6 +18,7 @@ Solution::Solution(int problemId){
 int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution(617);
+    /*
     //tree1
     TreeNode* t1 = new TreeNode(1);
     t1->left = new TreeNode(3);
@@ -35,6 +36,16 @@ int main(int argc, const char * argv[]) {
     TreeNode* m = solution.mergeTrees(t1,t2);
     //TreeNode* m = solution.copyBinaryTree(t1);
     cout<<m->val<<" "<<m->left->val<<" "<<m->right->val<<" "<<m->left->left->val<<endl;
+     */
+    vector<int> nums;
+    nums.push_back(1);
+    nums.push_back(4);
+    nums.push_back(3);
+    nums.push_back(2);
+    
+    int sum = solution.arrayPairSum(nums);
+    
+    cout<<sum<<endl;
     
     return 0;
 }
