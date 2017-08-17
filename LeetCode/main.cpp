@@ -37,15 +37,9 @@ int main(int argc, const char * argv[]) {
     //TreeNode* m = solution.copyBinaryTree(t1);
     cout<<m->val<<" "<<m->left->val<<" "<<m->right->val<<" "<<m->left->left->val<<endl;
      */
-    vector<int> nums;
-    nums.push_back(1);
-    nums.push_back(4);
-    nums.push_back(3);
-    nums.push_back(2);
+    string res = solution.complexNumberMultiply("1+-1i", "1+-1i");
     
-    int sum = solution.arrayPairSum(nums);
-    
-    cout<<sum<<endl;
+    cout<<res<<endl;
     
     return 0;
 }

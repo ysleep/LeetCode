@@ -10,6 +10,7 @@
 #define header_h
 
 #include <string.h>
+#include <stdlib.h>
 #include <iostream>
 #include <vector>
 #include <map>
@@ -47,6 +48,11 @@ public:
     
     //561. Array Partition I
     int arrayPairSum(vector<int>& nums);
+    
+    //537. Complex Number Multiplication
+    string complexNumberMultiply(string a, string b);
+    
+    
     
 private:
     int findMax(vector<int>& nums, int begin, int end);
