@@ -21,7 +21,7 @@ string Solution::encode(string longUrl){
         tinyURLShort2LongMap[shortUrl]=longUrl;
         tinyURLLong2ShortMap[longUrl]=shortUrl;
     }
-    return tinyUrlPrefix + tinyURLLong2ShortMap[longUrl];
+	return tinyUrlPrefix.append(tinyURLLong2ShortMap[longUrl]);
 }
 
 string Solution::decode(string shortUrl){

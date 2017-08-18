@@ -9,11 +9,13 @@
 #ifndef header_h
 #define header_h
 
-#include <string.h>
-#include <stdlib.h>
+#include <algorithm>
 #include <iostream>
-#include <vector>
 #include <map>
+#include <stdlib.h>
+#include <string>
+#include <time.h>
+#include <vector>
 using namespace std;
 
 struct TreeNode {
@@ -51,6 +53,10 @@ public:
     
     //537. Complex Number Multiplication
     string complexNumberMultiply(string a, string b);
+
+	//4. Median of Two Sorted Arrays
+	double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2); 
+	double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2, int nums1Index, int nums2Index, int n, bool ifOdd);
     
     
     
@@ -59,8 +65,8 @@ private:
     TreeNode* copyBinaryTree(TreeNode* t);
     
     //535. Encode and Decode TinyURL
-    string charDictStr = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    string tinyUrlPrefix = "http://tinyurl.com/";
+    string charDictStr;
+    string tinyUrlPrefix;;
     map<string, string> tinyURLLong2ShortMap;
     map<string, string> tinyURLShort2LongMap;
     

@@ -20,7 +20,7 @@ public:
             if(numberString[i]==plusMark)
                 plusIndex = i;
         }
-        real = stoi(numberString.substr(0,plusIndex));
+		real = stoi(numberString.substr(0,plusIndex));
         imaginary = stoi(numberString.substr(plusIndex+1,numberString.size()-1));
     }
     

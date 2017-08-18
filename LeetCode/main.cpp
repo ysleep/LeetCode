@@ -13,11 +13,15 @@ Solution::Solution(int problemId){
     if(problemId==561){
         srand( (unsigned)time(NULL) );
     }
+	if(problemId==535){
+		 charDictStr = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		 string tinyUrlPrefix = "http://tinyurl.com/";
+	}
 }
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    Solution solution(617);
+    Solution solution(4);
     /*
     //tree1
     TreeNode* t1 = new TreeNode(1);
@@ -37,9 +41,21 @@ int main(int argc, const char * argv[]) {
     //TreeNode* m = solution.copyBinaryTree(t1);
     cout<<m->val<<" "<<m->left->val<<" "<<m->right->val<<" "<<m->left->left->val<<endl;
      */
-    string res = solution.complexNumberMultiply("1+-1i", "1+-1i");
-    
-    cout<<res<<endl;
+    //string res = solution.complexNumberMultiply("1+-1i", "1+-1i");
+	vector<int> nums1;
+	nums1.push_back(1);
+	nums1.push_back(3);
+	nums1.push_back(4);
+	nums1.push_back(5);
+	nums1.push_back(6);
+	nums1.push_back(7);
+	nums1.push_back(8);
+	vector<int> nums2;
+	//nums2.push_back(2);
+	double res = solution.findMedianSortedArrays(nums1,nums2);
+	cout<<res<<endl;
+	int a;
+	cin>>a;
     
     return 0;
 }
