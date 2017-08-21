@@ -58,6 +58,9 @@ public:
 	double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2); 
 	double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2, int nums1Index, int nums2Index, int n, bool ifOdd);
     
+    //419. Battleships in a Board
+    int countBattleships(vector<vector<char>>& board);
+    
     
     
 private:

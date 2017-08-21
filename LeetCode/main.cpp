@@ -21,41 +21,55 @@ Solution::Solution(int problemId){
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    Solution solution(4);
     /*
-    //tree1
-    TreeNode* t1 = new TreeNode(1);
-    t1->left = new TreeNode(3);
-    t1->right = new  TreeNode(2);
-    t1->left->left = new TreeNode(5);
-    
-    //tree2
-    TreeNode* t2 = new TreeNode(2);
-    t2->left = new TreeNode(1);
-    t2->right = new  TreeNode(3);
-    t2->left->right = new TreeNode(4);
-    t2->right->right = new TreeNode(7);
-    
-    //merge
-    TreeNode* m = solution.mergeTrees(t1,t2);
-    //TreeNode* m = solution.copyBinaryTree(t1);
-    cout<<m->val<<" "<<m->left->val<<" "<<m->right->val<<" "<<m->left->left->val<<endl;
+     [".X..X"
+      ".X..X"
+      "....X"
+      "X.XX."
+      "X...X"]
      */
-    //string res = solution.complexNumberMultiply("1+-1i", "1+-1i");
-	vector<int> nums1;
-	nums1.push_back(1);
-	nums1.push_back(3);
-	nums1.push_back(4);
-	nums1.push_back(5);
-	nums1.push_back(6);
-	nums1.push_back(7);
-	nums1.push_back(8);
-	vector<int> nums2;
-	//nums2.push_back(2);
-	double res = solution.findMedianSortedArrays(nums1,nums2);
-	cout<<res<<endl;
-	int a;
-	cin>>a;
+    Solution solution(4);
+    vector<char> v0;
+    vector<char> v1;
+    vector<char> v2;
+    vector<char> v3;
+    vector<char> v4;
+    v0.push_back('.');
+    v0.push_back('X');
+    v0.push_back('.');
+    v0.push_back('.');
+    v0.push_back('X');
+    v1.push_back('.');
+    v1.push_back('X');
+    v1.push_back('.');
+    v1.push_back('.');
+    v1.push_back('X');
+    v2.push_back('.');
+    v2.push_back('.');
+    v2.push_back('.');
+    v2.push_back('.');
+    v2.push_back('X');
+    v3.push_back('X');
+    v3.push_back('.');
+    v3.push_back('X');
+    v3.push_back('X');
+    v3.push_back('.');
+    v4.push_back('X');
+    v4.push_back('.');
+    v4.push_back('.');
+    v4.push_back('.');
+    v4.push_back('X');
+    
+    vector<vector<char>> v;
+    v.push_back(v0);
+    v.push_back(v1);
+    v.push_back(v2);
+    v.push_back(v3);
+    v.push_back(v4);
+    
+    int a = solution.countBattleships(v);
+    cout<<a;
+    
     
     return 0;
 }
