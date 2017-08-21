@@ -21,54 +21,12 @@ Solution::Solution(int problemId){
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    /*
-     [".X..X"
-      ".X..X"
-      "....X"
-      "X.XX."
-      "X...X"]
-     */
     Solution solution(4);
-    vector<char> v0;
-    vector<char> v1;
-    vector<char> v2;
-    vector<char> v3;
-    vector<char> v4;
-    v0.push_back('.');
-    v0.push_back('X');
-    v0.push_back('.');
-    v0.push_back('.');
-    v0.push_back('X');
-    v1.push_back('.');
-    v1.push_back('X');
-    v1.push_back('.');
-    v1.push_back('.');
-    v1.push_back('X');
-    v2.push_back('.');
-    v2.push_back('.');
-    v2.push_back('.');
-    v2.push_back('.');
-    v2.push_back('X');
-    v3.push_back('X');
-    v3.push_back('.');
-    v3.push_back('X');
-    v3.push_back('X');
-    v3.push_back('.');
-    v4.push_back('X');
-    v4.push_back('.');
-    v4.push_back('.');
-    v4.push_back('.');
-    v4.push_back('X');
-    
-    vector<vector<char>> v;
-    v.push_back(v0);
-    v.push_back(v1);
-    v.push_back(v2);
-    v.push_back(v3);
-    v.push_back(v4);
-    
-    int a = solution.countBattleships(v);
-    cout<<a;
+   
+    vector<int> res = solution.countBits(10);
+    for(int i=0;i<res.size();i++){
+        cout<<res[i]<<" ";
+    }
     
     
     return 0;

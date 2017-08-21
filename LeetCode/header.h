@@ -61,6 +61,8 @@ public:
     //419. Battleships in a Board
     int countBattleships(vector<vector<char>>& board);
     
+    //338. Counting Bits
+    vector<int> countBits(int num);
     
     
 private:
