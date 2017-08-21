@@ -23,11 +23,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution(4);
    
-    vector<int> res = solution.countBits(10);
-    for(int i=0;i<res.size();i++){
-        cout<<res[i]<<" ";
-    }
-    
+    int res = solution.findComplement(10);
+    cout<<res;
     
     return 0;
 }

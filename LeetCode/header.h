@@ -64,6 +64,9 @@ public:
     //338. Counting Bits
     vector<int> countBits(int num);
     
+    //476. Number Complement
+    int findComplement(int num);
+    
     
 private:
     int findMax(vector<int>& nums, int begin, int end);
