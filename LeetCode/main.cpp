@@ -23,8 +23,16 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution(557);
     string s = "Let's take LeetCode contest";
-    string res = solution.reverseWords(s);
-    cout<<res;
+    vector<string> words;
+    vector<string> resultWords;
+    words.push_back("Hello");
+    words.push_back("Alaska");
+    words.push_back("Dad");
+    words.push_back("Peace");
+    resultWords = solution.findWords(words);
+    for(int i=0;i<resultWords.size();i++)
+        cout<<resultWords[i]<<" ";
+
     
     return 0;
 }

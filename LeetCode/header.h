@@ -12,6 +12,7 @@
 #include <algorithm>
 #include <iostream>
 #include <map>
+#include <set>
 #include <stdlib.h>
 #include <string>
 #include <time.h>
@@ -69,6 +70,9 @@ public:
     
     //557. Reverse Words in a String III
     string reverseWords(string s);
+    
+    //500. Keyboard Row
+    vector<string> findWords(vector<string>& words);
     
     
 private:
