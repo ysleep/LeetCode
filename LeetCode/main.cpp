@@ -21,9 +21,9 @@ Solution::Solution(int problemId){
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    Solution solution(4);
-   
-    int res = solution.findComplement(10);
+    Solution solution(557);
+    string s = "Let's take LeetCode contest";
+    string res = solution.reverseWords(s);
     cout<<res;
     
     return 0;

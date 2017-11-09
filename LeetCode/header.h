@@ -67,6 +67,9 @@ public:
     //476. Number Complement
     int findComplement(int num);
     
+    //557. Reverse Words in a String III
+    string reverseWords(string s);
+    
     
 private:
     int findMax(vector<int>& nums, int begin, int end);
