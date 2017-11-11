@@ -80,6 +80,15 @@ public:
     //682. Baseball Game
     int calPoints(vector<string>& ops);
     
+    //412. Fizz Buzz
+    vector<string> fizzBuzz(int n);
+    
+    //566. Reshape the Matrix
+    vector<vector<int>> matrixReshape(vector<vector<int>>& nums, int r, int c);
+    
+    //669. Trim a Binary Search Tree
+    TreeNode* trimBST(TreeNode* root, int L, int R);
+    
     
 private:
     int findMax(vector<int>& nums, int begin, int end);
