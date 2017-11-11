@@ -74,6 +74,12 @@ public:
     //500. Keyboard Row
     vector<string> findWords(vector<string>& words);
     
+    //344. Reverse String
+    string reverseString(string s);
+    
+    //682. Baseball Game
+    int calPoints(vector<string>& ops);
+    
     
 private:
     int findMax(vector<int>& nums, int begin, int end);

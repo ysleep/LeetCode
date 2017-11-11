@@ -22,16 +22,16 @@ Solution::Solution(int problemId){
 int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution(557);
-    string s = "Let's take LeetCode contest";
-    vector<string> words;
-    vector<string> resultWords;
-    words.push_back("Hello");
-    words.push_back("Alaska");
-    words.push_back("Dad");
-    words.push_back("Peace");
-    resultWords = solution.findWords(words);
-    for(int i=0;i<resultWords.size();i++)
-        cout<<resultWords[i]<<" ";
+    vector<string> ops;
+    ops.push_back("5");
+    ops.push_back("-2");
+    ops.push_back("4");
+    ops.push_back("C");
+    ops.push_back("D");
+    ops.push_back("9");
+    ops.push_back("+");
+    ops.push_back("+");
+    cout<<solution.calPoints(ops);
 
     
     return 0;
