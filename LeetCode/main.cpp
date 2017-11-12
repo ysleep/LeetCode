@@ -22,14 +22,18 @@ Solution::Solution(int problemId){
 int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution(557);
-    vector<int> candies;
-    candies.push_back(1);
-    candies.push_back(1);
-    candies.push_back(2);
-    //candies.push_back(2);
-    candies.push_back(3);
+    vector<int> nums;
+    vector<int> findNums;
+    nums.push_back(1);
+    nums.push_back(2);
+    nums.push_back(3);
+    nums.push_back(4);
+    findNums.push_back(2);
+    findNums.push_back(4);
+    //findNums.push_back(2);
     //candies.push_back(3);
-    cout<<solution.distributeCandies(candies);
+    vector<int> res = solution.nextGreaterElement(findNums,nums);
+    for(int num:res) cout<<num<<" ";
     
     return 0;
 }

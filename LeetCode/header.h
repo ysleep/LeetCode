@@ -12,7 +12,9 @@
 #include <algorithm>
 #include <iostream>
 #include <map>
+#include <unordered_map>
 #include <set>
+#include <stack>
 #include <stdlib.h>
 #include <string>
 #include <time.h>
@@ -94,6 +96,9 @@ public:
     
     //575. Distribute Candies
     int distributeCandies(vector<int>& candies);
+    
+    //496. Next Greater Element I
+    vector<int> nextGreaterElement(vector<int>& findNums, vector<int>& nums);
     
     
 private:
