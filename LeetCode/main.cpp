@@ -22,32 +22,14 @@ Solution::Solution(int problemId){
 int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution(557);
-    vector<vector<int>> grid;
-    vector<int> grid_1;
-    grid_1.push_back(1);
-    grid_1.push_back(0);
-    //grid_1.push_back(0);
-    //grid_1.push_back(0);
-    vector<int> grid_2;
-    grid_2.push_back(0);
-    grid_2.push_back(0);
-    //grid_2.push_back(1);
-    //grid_2.push_back(0);
-    vector<int> grid_3;
-    grid_3.push_back(0);
-    grid_3.push_back(0);
-    //grid_3.push_back(0);
-    //grid_3.push_back(0);
-    vector<int> grid_4;
-    grid_4.push_back(0);
-    grid_4.push_back(0);
-    //grid_4.push_back(0);
-    //grid_4.push_back(0);
-    grid.push_back(grid_1);
-    grid.push_back(grid_2);
-    grid.push_back(grid_3);
-    grid.push_back(grid_4);
-    cout<<solution.islandPerimeter(grid);
+    vector<int> candies;
+    candies.push_back(1);
+    candies.push_back(1);
+    candies.push_back(2);
+    //candies.push_back(2);
+    candies.push_back(3);
+    //candies.push_back(3);
+    cout<<solution.distributeCandies(candies);
     
     return 0;
 }

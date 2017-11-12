@@ -92,6 +92,9 @@ public:
     //463. Island Perimeter
     int islandPerimeter(vector<vector<int>>& grid);
     
+    //575. Distribute Candies
+    int distributeCandies(vector<int>& candies);
+    
     
 private:
     int findMax(vector<int>& nums, int begin, int end);
