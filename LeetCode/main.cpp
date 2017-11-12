@@ -23,16 +23,15 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     Solution solution(557);
     vector<int> nums;
-    vector<int> findNums;
-    nums.push_back(1);
+    nums.push_back(4);
+    nums.push_back(4);
+    nums.push_back(4);
+    nums.push_back(7);
+    nums.push_back(7);
     nums.push_back(2);
     nums.push_back(3);
     nums.push_back(4);
-    findNums.push_back(2);
-    findNums.push_back(4);
-    //findNums.push_back(2);
-    //candies.push_back(3);
-    vector<int> res = solution.nextGreaterElement(findNums,nums);
+    vector<int> res = solution.findDuplicates(nums);
     for(int num:res) cout<<num<<" ";
     
     return 0;

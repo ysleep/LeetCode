@@ -100,6 +100,9 @@ public:
     //496. Next Greater Element I
     vector<int> nextGreaterElement(vector<int>& findNums, vector<int>& nums);
     
+    //442. Find All Duplicates in an Array
+    vector<int> findDuplicates(vector<int>& nums);
+    
     
 private:
     int findMax(vector<int>& nums, int begin, int end);
